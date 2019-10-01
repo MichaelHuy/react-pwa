@@ -1,6 +1,6 @@
 {
-  "short_name": "React PWA",
-  "name": "PWA React Demo",
+  "short_name": "PWA Hackathon",
+  "name": "PWA Hackathon Reactjs",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +19,7 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "display": "minimal-ui",
+  "theme_color": "#e21d42",
+  "background_color": "#ff0000"
 }
