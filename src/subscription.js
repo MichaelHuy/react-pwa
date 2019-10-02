@@ -24,6 +24,21 @@ function sendSubscription(subscription) {
   })
 }
 
+export function askPermission() {
+  Notification.requestPermission().then(function(result) {
+    if (result === 'denied') {
+      console.log('Permission wasn\'t granted. Allow a retry.');
+      return;
+    }
+    if (result === 'default') {
+      console.log('The permission request was dismissed.');
+      return;
+    }
+    // Do something with the granted permission.
+    console.log('granted')
+  });
+}
+
 export function subscribeUser() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready.then(function(registration) {
